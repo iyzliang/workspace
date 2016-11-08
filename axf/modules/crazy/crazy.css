@@ -1,0 +1,312 @@
+@charset "utf-8";
+body{
+	background: #EFEFEF;
+}
+#crazy_header{
+	width: 100%;
+	height: 5rem;
+	background: #F9FAFD;
+	position: fixed;
+	top: 0;
+	left: 0;
+	line-height: 5rem;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	border-bottom:1px solid #EFEFEF ;
+	z-index: 10;
+}
+#crazy_header span:first-child{
+	display: inline-block;
+	width: 4.6rem;
+	height: 100%;
+	background: url(../../img/integral1.png) no-repeat center center;
+	background-size: auto 2.6rem; 
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#crazy_header>span:last-child{
+	display: inline-block;
+	width: 4.6rem;
+	height: 100%;
+	background: url(../../img/crazy_header1.png) no-repeat center center;
+	background-size: auto 2.6rem; 
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+/*banner*/
+#crazy_banner{
+	width: 100%;
+	height: 100%;
+	margin-top: 5rem;
+}
+#crazy_banner>img{
+	width: 100%;
+	display: block;
+}
+/*抢购时间*/
+#crazy_Time{
+	width: 100%;
+	height: 7.58rem;
+	display: flex;
+}
+#crazy_Time>div{
+	flex: 1;
+	padding-top: .5rem;
+	background: #272c2a;
+	border-left: 1px solid white;
+}
+#crazy_Time>div>.start_time,.crazy_state{
+	height: 2rem;
+	font-size: 1.5rem;
+	color: white;
+	line-height: 2rem;
+	text-align: center;
+}
+#crazy_Time>div>.crazy_img{
+	width: 1.3rem;
+	background: url(../../img/crazy_time1.png) no-repeat right center;
+	background-size:auto 1.3rem ;
+	height: 3rem;
+	margin: 0 auto;
+}
+#crazy_Time>.crazy_checked{
+	background: #FDD000;
+}
+#crazy_Time>.crazy_checked>.start_time,#crazy_Time>.crazy_checked>.crazy_state{
+	color: black;
+}
+#crazy_Time>.crazy_checked>.crazy_img{
+	background: url(../../img/crazy_time1.png) no-repeat left center;
+	background-size:auto 1.3rem ;
+}
+/*距离结束时间*/
+#end_time{
+	width: 100%;
+	height: 3.3rem;
+	background: #EFEFEF;
+	display: flex;
+}
+#end_time>div{
+	width: 28%;
+	position: relative;
+	height: 100%;
+	background: #FDD000;
+}
+#end_time>div::after{
+	content: "";
+	border-left: 1rem solid #FDD000;
+	border-top: 1.65rem solid #EFEFEF;
+	border-bottom: 1.65rem solid #EFEFEF;
+	position: absolute;
+	top: 0;
+	right: -.8rem;
+}
+#end_time>div>p{
+	height: 1.6rem;
+	text-align: center;
+	font-size: 1.2rem;
+	color: #333333;
+}
+#end_time>p{
+	height: 2rem;
+	width: 10rem;
+	margin: auto 1rem;
+	margin-left: auto;
+	background: #000000;
+	color: white;
+	border-radius: 1rem;
+	text-align: center;
+	line-height: 2rem;
+	font-size: 1.2rem;
+}
+/*抢购活动*/
+#crazy_commodity{
+	width: 100%;
+	min-height: 16.3rem;
+	background: white;
+	margin-bottom: .5rem;
+	display: flex;
+}
+#crazy_commodity .crazy_commodity_img{
+	width: 45%;
+	border-right: 1px solid #EFEFEF;
+}
+#crazy_commodity .crazy_commodity_img>img{
+	display: block;
+	width: 100%;
+}
+#crazy_commodity .crazy_commodity_info{
+	width: 55%;
+	padding-top: .5rem;
+	padding-left: .5rem;
+}
+#crazy_commodity .crazy_commodity_info>p{
+	width: 100%;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	font-size: 1.5rem;
+	color: #333333;
+}
+#crazy_commodity .crazy_commodity_info>.crazy_commodity_price{
+	width: 100%;
+	height: 4rem;
+	line-height: 4rem;
+	display: flex;
+}
+#crazy_commodity .crazy_commodity_info>.crazy_commodity_price>h2{
+	height: 3.5rem;
+	color: #ff602c;
+	font-size: 2.5rem;
+	line-height: 3.5rem;
+}
+#crazy_commodity .crazy_commodity_info>.crazy_commodity_price>p{
+	color: #979697;
+	font-size: 1.3rem;
+}
+#crazy_commodity>.crazy_commodity_info>.btn_commodity{
+	width: 70%;
+	height: 3.25rem;
+	background: #ff602c;
+	color: white;
+	text-align: center;
+	border-radius: 1.6rem;
+	line-height: 3.25rem;
+	font-size: 1.4rem;
+}
+#crazy_commodity>.crazy_commodity_info>.commodity_empty{
+	background: #aaa;
+}
+/*热卖*/
+#crazy_hot{
+	width: 100%;
+	height: 3.3rem;
+	text-align: center;
+	line-height: 3.3rem;
+	font-size: 1.5rem;
+	color: #333;
+}
+#crazy_hot>span::before{
+	content: "";
+	border-left: .5rem solid yellow;
+	display: inline-block;
+	height: 1.6rem;
+	line-height: 3.3rem;
+	margin-right: .4rem;
+}
+#hot_crazy_commodity{
+	width: 100%;
+	padding: 10px 10px 0 10px ;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-image: url(../../img/crazy_border1.png) 654 10 round;
+	display: flex;
+	flex-wrap: wrap;
+}
+#hot_crazy_commodity>div:nth-child(odd){
+	border-right: .25rem solid #EFEFEF;
+}
+#hot_crazy_commodity>div:nth-child(even){
+	border-left: .25rem solid #EFEFEF;
+}
+.crazy_commodity_list{
+	width: 50%;
+	height: 23rem;
+	margin-bottom: 10px;
+	background: white;
+	padding-left: .5rem;
+}
+.crazy_commodity_list>.hot_crazy_commodity_img>img{
+	width: 100%;
+}
+.crazy_commodity_list>.hot_crazy_commodity_info{
+	width: 100%;
+	position: relative;
+}
+.crazy_commodity_list>.hot_crazy_commodity_info>p{
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 1.25rem;
+	color: #333;
+}
+.crazy_commodity_list>.hot_crazy_commodity_info>.commodity_price{
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 1.25rem;
+}
+.crazy_commodity_list>.hot_crazy_commodity_info .old_price{
+	color: #fc1400;
+}
+.crazy_commodity_list>.hot_crazy_commodity_info .new_price{
+	color: #929292;
+	text-decoration: line-through
+}
+.crazy_commodity_list .addshopcar{
+	height: 2.6rem;
+	width: 2.6rem;
+	background:#ff4300 url(../../img/jia_jian.png) no-repeat right center;
+    background-size: 200% 100%;
+    border-radius: 50%;
+    border:1px solid #ffbe89;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+.rule{
+	width: 100%;
+	width: 100%;
+	height: 3.3rem;
+	text-align: center;
+	line-height: 3.3rem;
+	font-size: 1.5rem;
+	color: #333;
+}
+.rule>span::before{
+	content: "";
+	border-left: .5rem solid yellow;
+	display: inline-block;
+	height: 1.6rem;
+	line-height: 3.3rem;
+	margin-right: .4rem;
+}
+#rule{
+	width: 100%;
+	padding: 20px 41px 40px 61px;
+	list-style: initial;
+	list-style-type: none;
+}
+#rule>li{
+	list-style: outside decimal;	
+	width: 100%;
+	line-height: 19.5px;
+	font-size: 13px;
+	color: #333333;
+}
+/*购物车*/
+#shopcar{
+	width: 6.3rem;
+	height: 6.3rem;
+	position: fixed;
+	bottom: .5rem;
+	right: .5rem;
+	background: #FFD600 url(../../img/crazy_shopcar.png) no-repeat center center;
+	background-size: 80%;
+	border-radius: 50%;
+	z-index: 5;
+}
+#shopcar>div{
+	width: 23px;
+	height: 23px;
+	background: red;
+	color: white;
+	text-align: center;
+	line-height: 23px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 50%;
+}

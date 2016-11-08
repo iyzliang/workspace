@@ -1,0 +1,46 @@
+<header id="searchResult">
+	<a href="#home">
+		<span></span>
+	</a>
+	<form action="##">
+		<span></span>						
+		<input type="text" placeholder="请输入商品名称"/>
+	</form>
+	<span class="btn_search">搜索</span>
+</header>
+<ul class="bestSellers_list_search">
+	<script type="text/html" id="bestSellers_mode_search">
+		<%for(var n = 0;n<goods.length;n++){%>
+			<li>
+				<div class="bestSellers_list_img">
+					<img src="<%=goods[n].app_mimg%>"/>
+				</div>
+				<div class="bestSellers_list_info">
+					<div class="bestSellers_list_name"><%=goods[n].name%></div>
+					<div class="bestSellers_list_activity">
+						<%if(goods[n].is_xf !="0"){%>
+							<sapn class="bestSellers_list_selected">精选</sapn>
+						<%}%>
+						<%if(goods[n].pm_tags !=false){%>
+							<span class="bestSellers_list_give">买一增一</span>									
+						<%}%>
+					</div>							
+					<div class="bestSellers_list_weight"><%=goods[n].specifics%></div>
+					<div class="bestSellers_list_price">
+						<span class="bestSellers_list_newPrice">¥<%=goods[n].partner_price%></span>
+						<%if(goods[n].partner_price != goods[n].market_price){%>
+							<span class="bestSellers_list_oldPrice">¥<%=goods[n].market_price%></span>
+						<%}%>
+					</div>
+				</div>
+				<div class="bestSellers_list_commodityAdd"></div>
+			</li>
+		<%}%>
+	</script>
+</ul>
+<div id="empty">
+	无更多商品
+</div>
+<div id="shopcar">
+	<div>3</div>
+</div>

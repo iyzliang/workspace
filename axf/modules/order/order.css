@@ -1,0 +1,175 @@
+@charset "utf-8";
+body{
+	background: #EFEFEF;
+}
+#reserved_header{
+	width: 100%;
+	height: 5rem;
+	background: #F9FAFD;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 5rem;
+	border-bottom: 1px solid #E0E0E0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 4;
+}
+/*导航*/
+#reserved_nav{
+	border-bottom: 1px solid #A2A2A2;
+	border-top: 1px solid #A2A2A2;
+	width: 100%;
+	margin: 6rem 0 1rem 0;
+}
+#reserved_nav>ul{
+	width: 100%;
+	height: 3.6rem;
+	display: -webkit-flex;
+	display: flex;
+	background: white;
+}
+#reserved_nav>ul:first-child{
+	margin-bottom: .2rem;
+}
+#reserved_nav>ul>li{
+	-webkit-flex: 1;
+	flex: 1;
+	text-align: center;
+	line-height: 3.6rem;
+	font-size: 1.25rem;
+	color: #A7A7A7;
+}
+#reserved_nav>ul>.reserved_checked{
+	color: #615E5E;
+	position: relative;
+}
+#reserved_nav>ul>.reserved_checked::after{
+	content: "";
+	width: 80%;
+	border-bottom: 2px solid #615E5E;
+	position: absolute;
+	bottom: -0.2rem;
+	left: 10%;
+}
+/*精选水果*/
+#select_fruits{
+	width: 100%;
+	background: white;
+	margin-bottom: 5rem;
+}
+#select_fruits>p{
+	width: 100%;
+	height: 3.2rem;
+	font-size: 1.25rem;
+	color: #8A8A8A;
+	line-height: 3.2rem;
+	border-top: 1px solid #A0A0A0;
+}
+#select_fruits>p>span::before{
+	content: "";
+	display: inline-block;
+	height: 1.5rem;
+	float: left;
+	margin: .8rem 1rem;
+	border-left: .5rem solid #30ADF9;
+}
+/*list*/
+.select_fruits_list>li{
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	border-top: 2px solid #cccccc;
+}
+.select_fruits_list>li>.select_fruits_img{
+	width: 50%;
+	height: 12rem;
+}
+.select_fruits_list>li>.select_fruits_img>img{
+	height: 100%;
+}
+.select_fruits_list>li>.select_fruits_info{
+	width: 50%;
+	height: 12rem;
+	padding-right: 5%;
+	padding-top: 1rem;
+	position: relative;
+}
+.select_fruits_list>li>.select_fruits_info>.select_fruits_name{
+	height: 50%;
+	width: 100%;
+	font-size: 1.5rem;
+    overflow: hidden;
+	white-space: wrap;
+	color: #999;
+}
+.select_fruits_list>li>.select_fruits_info>.select_fruits_price>.new_price{
+	font-size: 2rem;
+	font-weight: 700;
+	color: #F3533D;
+	height: 6rem;
+	line-height: 6rem;
+}
+.select_fruits_list>li>.select_fruits_info>.select_fruits_price>.old_price{
+	color: #999;
+	font-size: 1rem;
+	text-decoration: line-through;
+	margin-left: .2rem;
+}
+.order_Hotcommoditys{
+	position: absolute;
+	height: 3rem ;
+	right: 1rem;
+	bottom: 1rem;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+.order_Hotcommoditys p{
+	width: 3rem;
+	height: 3rem;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	text-align: center;
+	display: none;
+	font-weight: 100;
+}
+.order_Hotcommoditys p:first-child{
+	height: 3rem;
+	background:#ff4300 url(../../img/jia_jian.png) no-repeat left center;
+    background-size: 200% 100%;
+    border-radius: 50%;
+    border:1px solid #ffbe89;
+    margin-left: auto;
+}
+.order_Hotcommoditys p:last-child{	
+	height: 3rem;
+	background:#ff4300 url(../../img/jia_jian.png) no-repeat right center;
+    background-size: 200% 100%;
+    border-radius: 50%;
+    border:1px solid #ffbe89;
+    display: block;
+}
+.order_addCommoditys{
+	visibility: hidden;
+}
+
+.ImgAnimation{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	opacity: 1;
+	border-radius: 50%;
+	width: 100%;
+	-webkit-animation: imgAni 1s linear forwards;
+	-moz-animation: imgAni 1s linear forwards;
+	-o-animation: imgAni 1s linear forwards;
+	animation: imgAni 1s linear forwards;
+}
+@keyframes imgAni{
+	0%{left:0;top: 0;width: 100%;opacity: 1;}
+	20%{left:50px;top: -100px;width: 80%;opacity: .8;}
+	100%{left: 280px;top: 600px;width: 0%;opacity: 0;}
+}

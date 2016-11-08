@@ -1,0 +1,131 @@
+body{
+	background: #EFEFEF;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+#container{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+/*固定头部*/
+#fixed_header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 4.83rem;
+	border-bottom: 1px solid #ffd600;
+	background: #ffd600;
+	display: -webkit-flex;
+	display: flex;
+	z-index: 9;
+}
+#fixed_header>.header_scanning{
+	width: 6.5rem;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 1rem;
+	background: url(../img/img_saoyisao.gif) no-repeat 0px 1rem;
+	background-size: 2rem 2rem;
+	text-align: left;
+	padding-top: 3.33rem;
+}
+#fixed_header>.header_site{
+	height: 100%;
+	width: 21.5625rem;
+	margin: auto;
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: 700;
+	line-height: 4.8rem;
+}
+.header_site::after{
+	content: "▼";
+	font-size: 1.2rem;
+}
+#fixed_header .header_seek{
+	width: 6.5rem;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 1rem;
+	background: url(../img/sousuo.png) no-repeat 4.5rem 1rem;
+	background-size: 2rem 2rem;
+	text-align: right;
+	padding-top: 3.33rem;
+}
+
+
+/*页脚*/
+#footer{
+	width: 100%;
+	min-height:5.4rem;
+	display: -webkit-flex;
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: rgba(246,246,246,.95);
+	z-index: 9;
+}
+#footer>div{
+	flex: 1;
+}
+#footer>div>a>div{
+	width: 100%;
+	height: 3.24rem;
+	display: -webkit-flex;
+	display: flex;
+}
+#footer>div>a>div>img{
+	margin: auto;
+	width: 2.5rem;
+}
+#footer .footer_settlement .footer_img>div{
+	margin: 2.5rem;
+	margin: auto;
+	display: -webkit-flex;
+	display: flex;
+}
+#footer .footer_settlement .footer_img>div>img{
+	height: 2.5rem;
+	margin: auto 0;
+}
+#footer .footer_settlement .footer_img #shop_num{
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	border-radius: 50%;
+	background: red;
+	color: white;
+	margin: auto 0;
+}
+#footer>div>a>p{
+	height: 2.16rem;
+	line-height: 2.16rem;
+	text-align: center;
+	font-size: 1.25rem;
+	color: #777;
+}
+
+#footer .checked_img{
+	-webkit-animation: an1 500ms;
+	-moz-animation:  an1 500ms;
+	-o-animation: an1 500ms;
+	animation: an1 500ms;
+}
+@keyframes an1{
+	0%{height: 2.5rem;width: 2.5rem;}
+	25%{height: 2rem;width: 2rem;}
+	50%{height: 2.5rem;width: 2.5rem;}
+	75%{height: 2rem;width: 2rem;}
+	100%{height: 2.5rem;width: 2.5rem;}
+}

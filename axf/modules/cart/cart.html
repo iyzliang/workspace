@@ -1,0 +1,74 @@
+<header id="shopCar_header">
+	<h1>购物车</h1>
+</header>
+<div id="userInfor">
+	<table>
+		<tbody>
+			<tr class="userInfo_name">
+				<td><div><span>收</span><span>件</span><span>人</span></div></td>
+				<td>姚先生</td>
+				<td rowspan="3">修改<span></span></td>
+			</tr>
+			<tr class="userInfo_Tel">
+				<td><div><span>电</span><span>话</span></div></td>
+				<td>13120167378</td>
+			</tr>
+			<tr userInfo_address>
+				<td><div><span>收</span><span>货</span><span>地</span><span>址</span></div></td>
+				<td>北京市白各庄新村</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!--明细信息-->
+<div id="shopCar_details">
+	<div class="supermarket">
+		<p>闪购超市<span>凑单专区</span></p>
+		<p>￥0起送，22:00前满￥30免运费，22:00后满￥69免运费</p>
+	</div>
+	<div class="shop_time">
+		<p>收货时间</p>
+		<p>一小时送达</p>
+		<p>可预订<span></span></p>
+	</div>
+	<div class="remarks">
+		<label for="in1">收货备注</label>
+		<input type="text" placeholder="可输入100字以内特殊要求内容" id="in1"/>
+	</div>
+</div>
+<div id="commoditys">
+	<script type="text/html" id="cartGoodslist">
+		<%for(var n in goods){%>
+			<div class="cart_commoditysBox">
+				<div class="isChecked"><span class=""></span></div>
+				<div class="commoditys_img">
+					<img src="<%=JSON.parse(goods[n].data).img%>" alt="" />
+				</div>
+				<div class="commoditys_info">
+					<p><%=JSON.parse(goods[n].data).name%></p>
+					<p class="comPrice">￥<%=JSON.parse(goods[n].data).newPrice%></p>
+					<div class="commoditys_num">
+						<p class="car_reduceCommoditys"></p>
+						<p class="car_numberCommoditys"><%=goods[n].number%></p>
+						<p class="cart_addCommoditys"></p>
+					</div>
+				</div>
+				<textarea style="display:none">
+					<%=goods[n].data%>
+				</textarea>
+			</div>
+		<%}%>
+	</script>
+	
+</div>
+<div id="settlement">
+	<div class="settlement_checked">
+		<span class=""></span>全选
+	</div>
+	<div class="settlementTotal">
+		共：<span class="settlement_total">￥0</span>
+	</div>
+	<div class="Determine">
+		选好了
+	</div>
+</div>

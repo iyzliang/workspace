@@ -1,0 +1,544 @@
+<header id="fixed_header">
+	<div class="header_scanning">
+		扫一扫
+	</div>
+	<div class="header_site">
+		三旗百货
+	</div>
+	<a href="#search">
+		<div class="header_seek">
+			搜索
+		</div>
+	</a>
+</header>
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+    <script type="text/html" id="swiperSlide">
+    	<%for(var n = 0;n<slide.length;n++){%>
+    		<div class="swiper-slide"><img src="<%=slide[n].activity.img%>"/></div>		
+    	<%}%>
+    </script>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<nav id="nav_list">
+	<script type="text/html" id="navListMode">
+		<%for(var n=0;n<menu.length;n++){%>
+			<div class="nav_list_first">
+				<a href="#<%=menu[n].activity.name%>">
+					<div class="nav_list_first_img">
+						<img src="<%=menu[n].activity.img%>"/>
+					</div>
+					<div class="nav_list_first_name">
+						<%=menu[n].activity.name%>
+					</div>
+				</a>
+			</div>
+		<%}%>
+	</script>
+</nav>
+<div id="headlines">
+	<div class="headlines_img"></div>
+	<div class="headlines_content">
+		<span class="headlines_span">雾霾</span>
+		3M防雾霾口罩22.8元/3只 1小时闪送
+	</div>
+</div>
+<nav id="nav_commodity">
+	<div class="nav_commodity1">
+		<img src="img/img_nav_c1.jpg"/>
+	</div>
+	<div class="nav_commodity2">
+		<img src="img/img_nav_c2.jpg"/>
+	</div>
+	<div class="nav_commodity3">
+		<img src="img/img_nav_c3.jpg"/>
+	</div>
+</nav>
+<div id="hot_commodity">
+	<div>
+		<img src="img/img_hot_commodity1.gif"/>
+	</div>
+	<div>
+		<img src="img/img_hot_commodity2.gif"/>
+	</div>
+	<div>
+		<img src="img/img_hot_commodity3.gif"/>
+	</div>
+	<div>
+		<img src="img/img_hot_commodity4.gif"/>
+	</div>
+</div>
+
+<!--优质水果-->
+<div id="fruit_list">
+	<div class="list_header">
+		<h2>优质水果</h2>
+		<span>更多<span></span></span>
+	</div>
+	<div class="list_banner">
+		<img src="img/fruit_list_banner.jpg"/>
+	</div>
+	<div class="list_commodity">
+		<div class="list_commodity1 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/fruit_list_commodity_img1.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">爱鲜蜂·精选莱阳梨</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+					<span class="give">买一增一</span>
+				</div>							
+				<div class="weight">600-700g 2粒/盒</div>
+				<div class="price">
+					<span class="newPrice">¥16.8</span>
+					<span class="oldPrice">¥32</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"爱鲜蜂·精选莱阳梨","img":"img/fruit_list_commodity_img1.jpg","newPrice":"16.8"}
+			</textarea>
+		</div>
+		<div class="list_commodity2 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/fruit_list_commodity_img2.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">爱鲜蜂·红宝石葡萄</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">550-600g/盒</div>
+				<div class="price">
+					<span class="newPrice">¥15.8</span>
+					<span class="oldPrice">¥25</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"爱鲜蜂·红宝石葡萄","img":"img/fruit_list_commodity_img2.jpg","newPrice":"15.8"}
+			</textarea>
+		</div>
+		<div class="list_commodity3 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/fruit_list_commodity_img3.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">爱鲜蜂·云南蒙自石榴</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">500-550g 2粒/盒</div>
+				<div class="price">
+					<span class="newPrice">¥12.9</span>
+					<span class="oldPrice">¥28.6</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"爱鲜蜂·云南蒙自石榴","img":"img/fruit_list_commodity_img3.jpg","newPrice":"12.9"}
+			</textarea>			
+		</div>
+	</div>
+</div>
+<!--牛奶面包-->
+<div id="milk_list">
+	<div class="list_header">
+		<h2>牛奶面包</h2>
+		<span>更多<span></span></span>
+	</div>
+	<div class="list_banner">
+		<img src="img/milk_list_banner.jpg"/>
+	</div>
+	<div class="list_commodity">
+		<div class="list_commodity1 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/milk_list_commodity_img1.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">雪原白瓷瓶风味酸乳</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+					<span class="give">买一增一</span>
+				</div>							
+				<div class="weight">200g</div>
+				<div class="price">
+					<span class="newPrice">¥10.9</span>
+					<span class="oldPrice">¥12</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"雪原白瓷瓶风味酸乳","img":"img/milk_list_commodity_img1.jpg","newPrice":"10.9"}
+			</textarea>	
+			
+		</div>
+		<div class="list_commodity2 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/milk_list_commodity_img2.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">音苏提有机酸奶酪</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+					<span class="give">买一增一</span>
+				</div>							
+				<div class="weight">140g</div>
+				<div class="price">
+					<span class="newPrice">¥7.9</span>
+					<span class="oldPrice">¥12</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"音苏提有机酸奶酪","img":"img/milk_list_commodity_img2.jpg","newPrice":"7.9"}
+			</textarea>		
+		</div>
+		<div class="list_commodity3 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/milk_list_commodity_img3.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">福成原味酸牛奶</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+					<span class="give">买一增一</span>
+				</div>							
+				<div class="weight">240g</div>
+				<div class="price">
+					<span class="newPrice">¥8.9</span>
+					<span class="oldPrice">¥12.9</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"福成原味酸牛奶","img":"img/milk_list_commodity_img3.jpg","newPrice":"8.9"}
+			</textarea>	
+		</div>
+	</div>
+</div>
+<!--卤味熟食-->
+<div id="meat_list">
+	<div class="list_header">
+		<h2>卤味熟食</h2>
+		<span>更多<span></span></span>
+	</div>
+	<div class="list_banner">
+		<img src="img/meat_list_banner.jpg"/>
+	</div>
+	<div class="list_commodity">
+		<div class="list_commodity1 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/meat_list_commodity_img1.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">飘香鸭锁骨(微辣)</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">220g</div>
+				<div class="price">
+					<span class="newPrice">¥16</span>
+					<span class="oldPrice">¥20</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"飘香鸭锁骨(微辣)","img":"img/meat_list_commodity_img1.jpg","newPrice":"16"}
+			</textarea>		
+		</div>
+		<div class="list_commodity2 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/meat_list_commodity_img2.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">月盛斋酱牛腱</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">100g</div>
+				<div class="price">
+					<span class="newPrice">¥15.8</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"月盛斋酱牛腱","img":"img/meat_list_commodity_img2.jpg","newPrice":"15.8"}
+			</textarea>	
+		</div>
+		<div class="list_commodity3 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/meat_list_commodity_img3.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">飘香卤鱼豆腐(微辣)</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">138/盒</div>
+				<div class="price">
+					<span class="newPrice">¥10</span>
+					<span class="oldPrice">¥18</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"飘香卤鱼豆腐(微辣)","img":"img/meat_list_commodity_img3.jpg","newPrice":"10"}
+			</textarea>		
+		</div>
+	</div>
+</div>
+<!--饮料酒水-->
+<div id="drink_list">
+	<div class="list_header">
+		<h2>饮料酒水</h2>
+		<span>更多<span></span></span>
+	</div>
+	<div class="list_banner">
+		<img src="img/drink_list_banner.jpg"/>
+	</div>
+	<div class="list_commodity">
+		<div class="list_commodity1 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/drink_list_commodity_img1.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">屈臣氏蒸馏水</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">400ml</div>
+				<div class="price">
+					<span class="newPrice">¥3</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"屈臣氏蒸馏水","img":"img/drink_list_commodity_img1.jpg","newPrice":"3"}
+			</textarea>		
+		</div>
+		<div class="list_commodity2 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/drink_list_commodity_img2.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">农夫柠檬红茶茶π饮料</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">500ml</div>
+				<div class="price">
+					<span class="newPrice">¥5</span>
+					<span class="oldPrice">¥6</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"农夫柠檬红茶茶π饮料","img":"img/drink_list_commodity_img2.jpg","newPrice":"5"}
+			</textarea>		
+		</div>
+		<div class="list_commodity3 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/drink_list_commodity_img3.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">「可口可乐」零度汽水</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">300ml</div>
+				<div class="price">
+					<span class="newPrice">¥3</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"「可口可乐」零度汽水","img":"img/drink_list_commodity_img3.jpg","newPrice":"3"}
+			</textarea>		
+		</div>
+	</div>
+</div>
+<!--零食大趴-->
+<div id="snacks_list">
+	<div class="list_header">
+		<h2>零食大趴</h2>
+		<span>更多<span></span></span>
+	</div>
+	<div class="list_banner">
+		<img src="img/snacks_list_banner.jpg"/>
+	</div>
+	<div class="list_commodity">
+		<div class="list_commodity1 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/snacks_list_commodity_img1.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">啪啪通原味虾片</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">85g</div>
+				<div class="price">
+					<span class="newPrice">¥16.8</span>
+					<span class="oldPrice">¥23.8</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"啪啪通原味虾片","img":"img/snacks_list_commodity_img1.jpg","newPrice":"16.8"}
+			</textarea>	
+		</div>
+		<div class="list_commodity2 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/snacks_list_commodity_img2.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">甘源牌蟹黄味瓜子仁</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">285g</div>
+				<div class="price">
+					<span class="newPrice">¥11.8</span>
+					<span class="oldPrice">¥12.9</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"甘源牌蟹黄味瓜子仁","img":"img/snacks_list_commodity_img2.jpg","newPrice":"11.8"}
+			</textarea>		
+		</div>
+		<div class="list_commodity3 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/snacks_list_commodity_img3.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">德芙蓝莓黑巧克力</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">100g</div>
+				<div class="price">
+					<span class="newPrice">¥23.8</span>
+					<span class="oldPrice">¥25</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"德芙蓝莓黑巧克力","img":"img/snacks_list_commodity_img3.jpg","newPrice":"23.8"}
+			</textarea>	
+		</div>
+	</div>
+</div>
+<!--方便速食-->
+<div id="convenient_list">
+	<div class="list_header">
+		<h2>方便速食</h2>
+		<span>更多<span></span></span>
+	</div>
+	<div class="list_banner">
+		<img src="img/convenient_list_banner.jpg"/>
+	</div>
+	<div class="list_commodity">
+		<div class="list_commodity1 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/convenient_list_commodity_img1.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">统一汤达人酸酸辣辣豚骨面</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">135g</div>
+				<div class="price">
+					<span class="newPrice">¥7.9</span>
+					<span class="oldPrice">¥8.5</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"统一汤达人酸酸辣辣豚骨面","img":"img/convenient_list_commodity_img1.jpg","newPrice":"7.9"}
+			</textarea>	
+		</div>
+		<div class="list_commodity2 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/convenient_list_commodity_img2.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">统一小浣熊意式红烩有点甜</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">50g</div>
+				<div class="price">
+					<span class="newPrice">¥1</span>
+					<span class="oldPrice">¥1.2</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"统一小浣熊意式红烩有点甜","img":"img/convenient_list_commodity_img2.jpg","newPrice":"1"}
+			</textarea>
+		</div>
+		<div class="list_commodity3 commoditysBox">
+			<div class="list_commodity_img">
+				<img src="img/convenient_list_commodity_img3.jpg"/>
+			</div>
+			<div class="list_commodity_info">
+				<div class="list_commodity_name">康师傅小鸡炖蘑菇面</div>
+				<div class="list_commodity_activity">
+					<sapn class="selected">精选</sapn>
+				</div>							
+				<div class="weight">95g</div>
+				<div class="price">
+					<span class="newPrice">¥3</span>
+				</div>
+			</div>
+			<div class="commodityAdd addCommoditys"></div>
+			<textarea style="display:none">
+				{"name":"康师傅小鸡炖蘑菇面","img":"img/convenient_list_commodity_img3.jpg","newPrice":"12.9"}
+			</textarea>	
+		</div>
+	</div>
+</div>
+<!--鲜蜂热卖-->
+<div id="bestSellers">
+	<div class="bestSellers_separate">
+		<span>鲜蜂热卖</span>
+	</div>
+	<ul class="bestSellers_list">
+		<script type="text/html" id="bestSellers_mode">
+			<%for(var n = 0;n<data.length;n++){%>
+				<li class="commoditysBox">
+					<div class="bestSellers_list_img">
+						<img src="<%=data[n].img%>"/>
+					</div>
+					<div class="bestSellers_list_info">
+						<div class="bestSellers_list_name"><%=data[n].name%></div>
+						<div class="bestSellers_list_activity">
+							<sapn class="bestSellers_list_selected">精选</sapn>
+							<%if(data[n].pm_info !=false){%>
+								<span class="bestSellers_list_give">买一增一</span>									
+							<%}%>
+						</div>							
+						<div class="bestSellers_list_weight"><%=data[n].specifics%></div>
+						<div class="bestSellers_list_price">
+							<span class="bestSellers_list_newPrice">¥<%=data[n].price%></span>
+							<span class="bestSellers_list_oldPrice">¥<%=data[n].market_price%></span>
+						</div>
+					</div>
+					<div class="home_Hotcommoditys">
+						<p class="home_Hotcommoditys_reduce reduceCommoditys"></p>
+						<p class="home_commoditys_num numberCommoditys">1</p>
+						<p class="home_Hotcommoditys_add addCommoditys"></p>
+					</div>
+					<textarea style="display:none">
+						{"name":"<%=data[n].name%>","img":"<%=data[n].img%>","newPrice":"<%=data[n].price%>"}
+					</textarea>						
+				</li>
+			<%}%>
+		</script>
+	</ul>
+</div>

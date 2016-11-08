@@ -1,0 +1,343 @@
+@charset "utf-8";
+body{
+	background: #EFEFEF;
+}
+#shopCar_header h1{
+	width: 100%;
+	background: #F9FAFD;
+	height: 5rem;
+	text-align: center;
+	line-height: 5rem;
+	font-size: 1.5rem;
+	color: #333;
+}
+#userInfor table{
+	width: 100%;
+	height: 8rem;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	-webkit-border-image:  url(../../img/shopcar_img.png) 94 5 round ;
+	border-image: url(../../img/shopcar_img.png) 94 5 round ;
+	background: white;
+	color: #333333;
+}
+#userInfor table .userInfo_name td:last-child{
+	width: 18%;
+	height: 3rem;
+	font-size: 1.4rem;
+}
+#userInfor table .userInfo_name td:last-child span{
+	width: .6rem;
+	height: 1.2rem;
+	display: inline-block;
+	background: url(../../img/img_gengduo.gif) no-repeat;
+	background-size: 100% 100%;
+	margin-left: .3rem;
+}
+#userInfor table td:first-of-type{
+	width: 27%;
+	height: 3rem;
+	padding: .5rem 1rem .5rem 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+#userInfor table td:first-of-type div{
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;	
+}
+#userInfor table td:nth-of-type(2){
+	width: 55%;
+	height: 3rem;
+	font-size: 1.4rem;
+	padding: .6rem 0;
+	line-height: 1.8rem;
+}
+/*明细*/
+#shopCar_details{
+	width: 100%;
+	background: white;
+	margin-top: 1rem;
+	padding-top: .5rem;
+}
+#shopCar_details .supermarket{
+	padding-left: 1.5rem;
+	border-bottom: 1px solid #E0E0E0;
+}
+#shopCar_details .supermarket>p:first-child{
+	width: 100%;
+	padding-right: 1.5rem;
+	font-size: 1.25rem;
+	height: 3.16rem;
+	line-height: 3.16rem;
+	color: #999;
+}
+.supermarket>p:first-child::before{
+	content: "";
+	display: inline-block;
+	width: .5rem;
+	height: 1.3rem;
+	background: #FFD600;
+	margin-right: .5rem;
+}
+#shopCar_details .supermarket>p:first-child span{
+	display: inline-block;
+	float: right;
+	width: 7.6rem;
+	height: 2.75rem;
+	border: 1px solid #FF3800;
+	color: #FF3800;
+	border-radius: 1.37rem;
+	text-align: center;
+	line-height: 2.75rem;
+}
+#shopCar_details .supermarket>p:last-child{
+	width: 100%;
+	height: 2.1rem;
+	line-height: 2.1rem;
+	font-size: 1.1rem;
+	color: #999;
+}
+/*收货时间*/
+.shop_time{
+	width: 100%;
+	height: 5.3rem;
+	display: -webkit-flex;
+	display: flex;
+	padding-left: 1.5rem;
+	border-bottom: 1px solid #E0E0E0;
+}
+.shop_time p{
+	font-size: 1.5rem;
+	height: 100%;
+	line-height: 5.3rem;
+}
+.shop_time p:first-child{
+	-webkit-flex: 1;
+	flex: 1;
+}
+.shop_time p:nth-child(2){
+	-webkit-flex: 2;
+	flex: 2;
+	color: red;
+}
+.shop_time p:last-child{
+	-webkit-flex: 1;
+	flex: 1;
+}
+.shop_time p:last-child>span{
+	width: .6rem;
+	height: 1.2rem;
+	display: inline-block;
+	background: url(../../img/img_gengduo.gif) no-repeat;
+	background-size: 100% 100%;
+	margin-left: .3rem;
+}
+.remarks{
+	width: 100%;
+	height: 5.3rem;
+	display: -webkit-flex;
+	display: flex;
+	border-bottom: 1px solid #E0E0E0;
+	padding: 0 1.5rem;
+}
+.remarks label{
+	-webkit-flex: 1;
+	flex: 1;
+	height: 100%;
+	line-height: 5.3rem;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.remarks input{
+	-webkit-flex: 3;
+	flex: 3;
+	border: 1px solid #cecece;
+	height: 3.2rem;
+	margin: auto 0;
+	font-size: 1.4rem;
+	line-height: 3.2rem;
+	border-radius: .5rem;
+}
+/*选择商品*/
+#commoditys{
+	width: 100%;
+	background: white;
+}
+#commoditys>div{
+	border-bottom: 3px solid #EDEDED;
+	display: -webkit-flex;
+	display: flex;
+	height: 8.5rem;
+}
+#commoditys .isChecked{
+	width: 15%;
+	height: 8.5rem;
+	display: -webkit-flex;
+	display: flex;
+}
+#commoditys .isChecked span{
+	display: inline-block;
+	width: 1.8rem;
+	height: 1.8rem;
+	margin: auto;
+	border-radius:50% ;
+	background: url(../../img/shopcheck.png) no-repeat;
+	background-size:100% 100% ;
+}
+#commoditys .commoditys_img{
+	width: 15%;
+	display: flex;
+	display: -webkit-flex;
+	display: flex;
+}
+#commoditys .commoditys_img img{
+	width: 100%;
+	margin: auto;
+}
+#commoditys .commoditys_info{
+	width: 100%;
+	height: 8.5rem;
+	display: -webkit-flex;
+	display: flex;
+	position: relative;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+#commoditys .commoditys_info>p{
+	height: 50%;
+	width: 100%;
+	font-size: 1.5rem;
+	line-height: 4.2rem;
+	padding-left: 1rem;
+}
+#commoditys .commoditys_info>div{
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	height: 3rem;
+}
+.commoditys_num p{
+	width: 3rem;
+	height: 100%;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	text-align: center;
+
+}
+.commoditys_num p:first-child{
+	height: 100%;
+	background:#ff4300 url(../../img/jia_jian.png) no-repeat left center;
+    background-size: 200% 100%;
+    border-radius: 50%;
+    border:1px solid #ffbe89;
+}
+.commoditys_num p:last-child{
+	height: 100%;
+	background:#ff4300 url(../../img/jia_jian.png) no-repeat right center;
+    background-size: 200% 100%;
+    border-radius: 50%;
+    border:1px solid #ffbe89;
+}
+/*结账*/
+#settlement{
+	width: 100%;
+	height: 5.5rem;
+	display: -webkit-flex;
+	display: flex;
+	padding-left: 1rem;
+	font-size: 1.5rem;
+	background: white;
+	margin-bottom: 5.4rem;
+	color: #333;
+}
+#settlement .settlement_checked{
+	width: 25%;
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 1.5rem;
+	line-height: 5.5rem;
+}
+#settlement .settlement_checked span{
+	display: inline-block;
+	width: 1.8rem;
+	height: 1.8rem;
+	margin: auto 0;
+	border-radius:50% ;
+	background: url(../../img/shopcheck.png) no-repeat;
+	background-size:100% 100% ;
+	margin-right: .5rem;
+}
+#settlement .settlementTotal{
+	width: 40%;
+	height: 100%;
+	line-height: 5.5rem;
+}
+#settlement .settlementTotal .settlement_total{
+	color: red;
+}
+#settlement .Determine{
+	width: 10.8rem;
+	margin-left: auto;
+	height: 100%;
+	background: #ffd600;
+	text-align: center;
+	line-height: 5.5rem;
+}
+
+#commoditys .isChecked>.NOChecked{
+	display: inline-block;
+	width: 1.8rem;
+	height: 1.8rem;
+	margin: auto;
+	border-radius:50% ;
+	background: url(../../img/nochecked.png) no-repeat;
+	background-size:100% 100% ;
+}
+#settlement .settlement_checked .Noche{
+	display: inline-block;
+	width: 1.8rem;
+	height: 1.8rem;
+	margin: auto 0;
+	border-radius:50% ;
+	background: url(../../img/nochecked.png) no-repeat;
+	background-size:100% 100% ;
+	margin-right: .5rem;
+}
+
+#empty_img{
+	width: 100%;
+	height: 24rem;
+	padding-top: 7rem;
+	text-align: center;
+}
+#empty_img>img{
+	height: 8.6rem;
+	margin: 0 auto;
+}
+#empty_img>p{
+	height: 5rem;
+	font-size: 2rem;
+	color: #999;
+	text-align: center;
+	width: 100%;
+	line-height: 5rem;
+}
+#empty_img>a{
+	color: #999;
+	font-size: 1.5rem;
+	padding: .4rem 3.1rem;
+	border: rgb(224, 224, 224) 1px solid;
+	margin: 0 auto;
+}

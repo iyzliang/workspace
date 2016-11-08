@@ -1,0 +1,33 @@
+@charset "utf-8";
+#load{
+	width: 100%;
+	height: 100%;
+	background: #ffd82b;
+	display: flex;
+}
+#load>.bee{
+	width: 60%;
+	margin: auto;	
+}
+#load>.bee>.Bee_logo>img{
+	width: 100%;
+	margin-bottom: 8%;
+}
+#load>.bee>.location{
+	text-align: center;
+}
+#load>.bee>.location>img{
+	width: 15%;
+	animation: load 2s infinite reverse linear;
+}
+@keyframes load{
+	from{opacity: 1;}
+	to{opacity: .1;}
+}
+#load>.bee>p{
+	height: 1rem;
+	font-size: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	width: 100%;
+}

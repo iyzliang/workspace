@@ -1,0 +1,50 @@
+<header id="reserved_header">
+	新鲜预订
+</header>
+<nav id="reserved_nav">
+	<ul>
+		<li class="reserved_checked">精选水果</li>
+		<li>直供蔬菜</li>
+		<li>水产海鲜</li>
+		<li>肉禽蛋</li>
+		<li>乳品烘焙</li>
+	</ul>
+	<ul>
+		<li>熟食面点</li>
+		<li>粮油副食</li>
+		<li>酒水饮料</li>
+		<li>休闲零食</li>
+		<li>整箱购</li>
+	</ul>
+</nav>
+<div id="select_fruits">
+	<p><span>精选水果</span></p>
+	<ul class="select_fruits_list">
+		<script type="text/html" id="reserved_li">
+			<%for(var n=0; n<product.length; n++){%>
+				<li class="order_commoditysBox">
+					<div class="select_fruits_img">
+						<img src="<%=product[n].img%>" alt="" />
+					</div>
+					<div class="select_fruits_info">
+						<p class="select_fruits_name"><%=product[n].name%><%=product[n].specifics%></p>
+						<div class="select_fruits_price">
+							<span class="new_price">¥<%=product[n].price%></span>
+							<%if(product[n].market_price !=product[n].price){%>
+								<span class="old_price">¥<%=product[n].market_price%></span>	
+							<%}%>
+						</div>
+						<div class="order_Hotcommoditys">
+							<p class="order_reduceCommoditys"></p>
+							<p class="order_numberCommoditys">1</p>
+							<p class="order_addCommoditys"></p>
+						</div>
+					</div>
+					<textarea style="display:none">
+						{"name":"<%=product[n].name%>","img":"<%=product[n].img%>","newPrice":"<%=product[n].price%>"}
+					</textarea>	
+				</li>
+			<%}%>
+		</script>
+	</ul>
+</div>

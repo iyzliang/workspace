@@ -1,0 +1,180 @@
+@charset "utf-8";
+body{
+	background: #EFEFEF;
+}
+/*标题*/
+#integral{
+	width: 100%;
+	height: 5rem;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #F9FAFD;
+	line-height: 5rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	border-bottom:1px solid #EFEFEF ;
+	z-index: 4;
+}
+#integral span{
+	display: inline-block;
+	width: 4.6rem;
+	height: 100%;
+	float: left;
+	background: url(../../img/integral1.png) no-repeat left center;
+	background-size: auto 2.6rem; 
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*积分圈*/
+#available{
+	margin-top: 5rem;
+	height: 13.7rem;
+	width: 100%;
+	padding: 1rem 0;
+	background: white;
+	display: flex;
+	position: relative;
+}
+.last_circles{
+	position: absolute;
+	top: 5.5rem;
+	left: 41%;
+}
+.last_circles>p{
+	width: 100%;
+	height: 1.6rem;
+	font-size: 1.5rem;
+	color: #999;
+	text-align: center;
+}
+.available_circle{
+	margin: auto;
+	width: 140px;
+	height: 140px;
+	position: relative;
+	transform: rotate(0deg);
+}
+.available_circle2{
+	width: 100%;
+	height: 100%;
+	border: 29px solid white;
+	border-radius: 50%;
+	clip: rect(0px 70px 140px 0px);
+	position: absolute;
+}
+.available_circle_external1{
+	width: 136px;
+    height: 136px;
+    top: 2px;
+    left: 2px;
+    clip: rect(0px 68px 136px 0px);
+    transform: rotate(-360deg);
+	border: 18px solid #ef592a;
+	border-radius: 50%;
+    position: absolute;
+}
+.available_circle_external2{
+	width: 136px;
+    height: 136px;
+    top: 2px;
+    left: 2px;
+    clip: rect(0px 136px 136px 68px);
+    transform: rotate(0deg);
+    border:18px solid #ef592a;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+}
+.available_circle_inside1{
+	width: 100px;
+	height: 100px;
+	border: 7px solid #e13600;
+	border-radius: 50%;
+	position: absolute;
+}
+.available_circle_inside2{
+	width: 100px;
+	height: 100px;
+	border: 7px solid #e13600;
+	border-radius: 50%;
+	position: absolute;
+}
+
+
+/*积分明细*/
+#detailed{
+	width: 100%;
+	height: 7rem;
+	margin-top: 1px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+#detailed>div{
+	width: 33%;
+	padding:4.75rem 0 1rem 0;
+}
+#detailed>div:nth-child(1){
+	background: white url(../../img/img_jf1.png) no-repeat center 1rem;
+	background-size: 31.05px;
+}
+#detailed>div:nth-child(2){
+	background: white url(../../img/img_jf2.png) no-repeat center 1rem;
+	background-size: 31.05px;
+}
+#detailed>div:nth-child(3){
+	background: white url(../../img/img_jf3.png) no-repeat center 1rem;
+	background-size: 31.05px;
+}
+#detailed>div>p{
+	height: 1.25rem;
+	line-height: 1.25rem;
+	font-size: 1.25rem;
+	text-align: center;
+}
+/*积分券*/
+#Integral_voucher{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1rem;
+}
+#Integral_voucher>div{
+	width: 50%;
+	height: 16rem;
+	background: white;
+	border: 1px solid #EFEFEF;
+	padding:10rem 1rem .5rem 1rem;
+}
+#Integral_voucher>div:nth-child(1){
+	background: white url(../../img/img_jfq1.jpg) no-repeat center 1rem;
+	background-size: 17rem auto;
+}
+#Integral_voucher>div:nth-child(2){
+	background: white url(../../img/img_jfq2.jpg) no-repeat center 1rem;
+	background-size: 17rem auto;
+}
+#Integral_voucher>div:nth-child(3){
+	background: white url(../../img/img_jfq3.jpg) no-repeat center 1rem;
+	background-size: 17rem auto;
+}
+#Integral_voucher>div:nth-child(4){
+	background: white url(../../img/img_jfq4.jpg) no-repeat center 1rem;
+	background-size: 17rem auto;
+}
+#Integral_voucher>div>div{
+	height: 5.5rem;
+	width: 100%;
+}
+#Integral_voucher>div>div>p{
+	height: 2.75rem;
+	width: 100%;
+	font-size: 1.25rem;
+	line-height: 2.75rem;
+}
+#Integral_voucher>div>div>p:last-child{
+	color: #e64f1a;
+}

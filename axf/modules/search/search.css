@@ -1,0 +1,98 @@
+@charset "utf-8";
+body{
+	background: #EFEFEF;
+}
+#search{
+	width: 100%;
+	height: 5rem;
+	background: #F9FAFD;
+	position: fixed;
+	top: 0;
+	left: 0;
+	line-height: 5rem;
+	text-align: center;
+	display: -webkit-flex;
+	display: flex;
+}
+#search>span:first-child{
+	display: inline-block;
+	width: 4.6rem;
+	height: 100%;
+	background: url(../../img/integral1.png) no-repeat left center;
+	background-size: auto 2.6rem; 
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#search>.btn_search{
+	font-size: 1.5rem;
+	display: inline-block;
+	width: 5rem;
+	height: 100%;
+	line-height: 5rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #777;
+	text-align: left;
+}
+#search>form{
+	width: 60%;
+	height: 2.75rem;
+	border: 1px solid #E0E0E0;
+	margin: auto;
+	line-height: 2.75;
+	display: -webkit-flex;
+	display: flex;
+}
+#search>form>input{
+	height: 1.75rem;
+	border: none;
+	background: #F9FAFD;
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+	margin: auto;
+}
+#search>form>span{
+	width: 2.6rem;
+	height: 2.6rem;
+	display: inline-block;
+	background:url(../../img/ss1.png) no-repeat center center;
+	background-size: 1.5rem 1.5rem;
+}
+/*记录*/
+#search_Record{
+	width: 100%;
+	padding: 2.6rem 0 3.1rem 1.6rem;
+	margin-top: 5rem;
+}
+#search_Record>p{
+	width: 100%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	font-size: 1.25rem;
+	color: #888;
+}
+#search_Record ul li{
+	padding: 10px 19px;
+	background: white;
+	margin: 7.7px 13px 5px 0;
+	font-size: 1.25rem;
+	display: inline-block;
+	height: 43px;
+	line-height: 23px;
+	border-radius: 35px;
+}
+#search_Record ul{
+	margin-bottom: 51px;
+}
+#search_Record .delete{
+	width: 70%;
+	height: 4.4rem;
+	border: 1px solid #E0E0E0;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 4.4rem;
+	font-size: 1.5rem;
+	color: #aaa;
+}
